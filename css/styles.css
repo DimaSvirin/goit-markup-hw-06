@@ -544,11 +544,13 @@ address {
     color: var(--color-white);
 }
 
+/* FOOTER FORM */
 .footer-form {
-    
+    display: flex;
 }
 
 .footer-input {
+    display: block;
     width: 358px;
     height: 50px;
     background-color: transparent;
@@ -568,15 +570,18 @@ address {
 }
 
 .footer-btn {
+    display: block;
+    position: relative;
     width: 200px;
     height: 50px;
     padding: 10px auto;
     margin-left: 12px;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
     background: var(--active-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -585,7 +590,12 @@ address {
     color: var(--color-white);
 }
 
-.footer-btn-icon {}
+.footer-btn-icon {
+    position: absolute;
+    /* right: 12px; */
+    /* top: -5px; */
+    fill: var(--color-white);
+}
 
 /* BACKDROP */
 
@@ -643,6 +653,10 @@ address {
     visibility: hidden;
     pointer-events: none;
 }
+
+/* MODAL FORM */
+
+
 /* PORTFOLIO */
 .portfolio {
     background: var(--color-white);

@@ -405,10 +405,9 @@
           <strong class="footer-form-title">Підпишіться на розсилку</strong>
           <form class="footer-form">
             <input type="email" name="email" class="footer-input" placeholder="E-mail">
-            <button type="submit" class="footer-btn">Підписатися</button>
-            <svg class="footer-btn-icon" width="24" height="24">
+            <button type="submit" class="footer-btn">Підписатися <svg class="footer-btn-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-send"></use>
-            </svg>
+            </svg></button>
           </form>
         </div>
       </div>
@@ -420,6 +419,37 @@
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Залиште свої дані, ми вам передзвонимо</p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="input-label">Ім'я</label>
+            <input type="name" name="user-name" id="user-name">
+            <svg class="modal-icon" width="18" heigth="18">
+              <use href="./images/icons.svg#icon-person"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-tel" class="input-label">Телефон</label>
+            <input type="tel" name="user-tel" id="user-name">
+            <svg class="modal-icon" width="18" heigth="18">
+              <use href="./images/icons.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="input-label">Пошта</label>
+            <input type="email" name="user-email" id="user-email">
+            <svg class="modal-icon" width="18" heigth="18">
+              <use href="./images/icons.svg#icon-email"></use>
+            </svg>
+          </div>
+          <div class="modal-field">
+            <label for="user-comment" class="input-label">Коментар</label>
+            <textarea name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+          </div>
+          <!-- <input type="checkbox">
+          <p>Погоджуюся з розсилкою та приймаю <a href="#" class="contract-link link">Умови договору</a></p> -->
+          <button type="submit" class="modal-btn-send">Відправити</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
