@@ -532,6 +532,60 @@ address {
     background-color: var(--active-color);
 }
 
+.footer-singup {
+    margin-left: 93px;
+}
+
+.footer-form-title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-white);
+}
+
+.footer-form {
+    
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    margin-top: 20px;
+    padding: 15px 16px;
+}
+
+.footer-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-btn {
+    width: 200px;
+    height: 50px;
+    padding: 10px auto;
+    margin-left: 12px;
+    /* justify-content: center; */
+    align-items: center;
+    background: var(--active-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--color-white);
+}
+
+.footer-btn-icon {}
 
 /* BACKDROP */
 
