@@ -452,12 +452,16 @@
             <label for="user-comment" class="input-label">Коментар</label>
             <textarea name="user-comment" id="user-comment" class="modal-comment" placeholder="Введіть текст"></textarea>
           </div>
-          <div class="modal-check">
-            <input type="checkbox" name="policy" class=" /hidden" id="check">
-            <svg class="check-icon" width="16" height="15">
-              <use href="./images/icons.svg#icon-check"></use>
-            </svg>
-            <label for="check" class="check-label">Погоджуюся з розсилкою та приймаю <a href="#" class="contract-link link">Умови договору</a></label>
+          <div class="modal-field-check">
+            <input type="checkbox" name="policy" class="modal-check hidden" id="check">
+            <label for="check" class="check-label">
+              <span>
+                <svg class="check-icon" width="16" height="15">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              Погоджуюся з розсилкою та приймаю <a href="#" class="contract-link">Умови договору</a>
+            </label>
           </div>
           <button type="submit" class="modal-btn-send">Відправити</button>
         </form>

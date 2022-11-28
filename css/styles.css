@@ -562,8 +562,14 @@ address {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     padding: 15px 16px;
-}
+    outline: transparent;
+    color: var(--active-color);
 
+    transition: border-color var(--transition-d-tf);
+}
+.footer-input:focus {
+    border-color: var(--color-white);
+}
 .footer-input::placeholder {
     font-size: 16px;
     line-height: 1.25;
@@ -590,8 +596,11 @@ address {
     text-align: center;
     letter-spacing: 0.06em;
     color: var(--color-white);
+
+    transition: background-color var(--transition-d-tf);
 }
-.footer-btn:hover {
+.footer-btn:hover,
+.footer-btn:focus {
     background-color: #188CE8;
 }
 .footer-btn-icon {
@@ -698,6 +707,8 @@ address {
     border-radius: 4px;
     padding-left: 40px;
     outline: transparent;
+
+    transition: border-color var(--transition-d-tf)
 }
 
 .modal-input:focus {
@@ -711,11 +722,13 @@ address {
     top: 50%;
     transform: translateY(-50%);
     left: 12px;
+    transition: fill var(--transition-d-tf);
 }
 
 .modal-comment {
     display: block;
     margin-top: 4px;
+    padding: 16px;
     width: 100%;
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -723,6 +736,8 @@ address {
     outline: transparent;
     background-color: transparent;
     resize: none;
+
+    transition: border-color var(--transition-d-tf);
 }
 .modal-comment::placeholder {
     font-weight: 400;
@@ -734,23 +749,46 @@ address {
 .modal-comment:focus {
     border-color: var(--active-color);
 }
-.modal-check {
+
+/* CHECKBOX */
+.modal-field-check {
     margin-top: 20px;
     display: flex;
     justify-content: center;
 }
 
 .check-label {
-    
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
 }
+.check-label span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid var(--title-color);
+    border-radius: 2px;
+    margin-right: 7px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: transparent;
+
+    transition: fill var(--transition-d-tf),
+    background-color var(--transition-d-tf),
+    border var(--transition-d-tf);
+}
+.modal-check:checked + .check-label span {
+    fill: var(--color-white);
+    background-color: var(--active-color);
+    border: none;
+}
 .contract-link {
-    text-decoration: underline;
     color: var(--active-color);
+    margin-left: 5px;
 }
 
 .modal-btn-send {
@@ -768,6 +806,8 @@ address {
     border-radius: 4px;
     border: none;
     margin-top: 30px;
+
+    transition: background-color var(--transition-d-tf);
 }
 .modal-btn-send:hover,
 .modal-btn-send:focus {
