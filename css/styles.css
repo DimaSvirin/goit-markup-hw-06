@@ -696,10 +696,16 @@ address {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    background-color: transparent;
     padding-left: 40px;
+    outline: transparent;
 }
 
+.modal-input:focus {
+    border-color: var(--active-color);
+}
+.modal-input:focus + .modal-icon {
+    fill: var(--active-color);
+}
 .modal-icon {
     position: absolute;
     top: 50%;
@@ -714,6 +720,7 @@ address {
     height: 120px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
+    outline: transparent;
     background-color: transparent;
     resize: none;
 }
@@ -724,7 +731,9 @@ address {
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-
+.modal-comment:focus {
+    border-color: var(--active-color);
+}
 .modal-check {
     margin-top: 20px;
     display: flex;
@@ -760,7 +769,10 @@ address {
     border: none;
     margin-top: 30px;
 }
-
+.modal-btn-send:hover,
+.modal-btn-send:focus {
+    background-color: #188CE8;
+}
 
 /* PORTFOLIO */
 .portfolio {
