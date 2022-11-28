@@ -423,31 +423,42 @@
         <form class="modal-form">
           <div class="modal-field">
             <label for="user-name" class="input-label">Ім'я</label>
-            <input type="name" name="user-name" id="user-name">
-            <svg class="modal-icon" width="18" heigth="18">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
+            <div class="modal-input-icon">
+              <input type="text" name="user-name" class="modal-input" id="user-name">
+              <svg class="modal-icon" width="18" heigth="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-tel" class="input-label">Телефон</label>
-            <input type="tel" name="user-tel" id="user-name">
-            <svg class="modal-icon" width="18" heigth="18">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
+            <div class="modal-input-icon">
+              <input type="tel" name="user-tel" class="modal-input" id="user-tel">
+              <svg class="modal-icon" width="18" heigth="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-email" class="input-label">Пошта</label>
-            <input type="email" name="user-email" id="user-email">
-            <svg class="modal-icon" width="18" heigth="18">
-              <use href="./images/icons.svg#icon-email"></use>
-            </svg>
+            <div class="modal-input-icon">
+              <input type="email" name="user-email" class="modal-input" id="user-email">
+              <svg class="modal-icon" width="18" heigth="18">
+                <use href="./images/icons.svg#icon-email"></use>
+              </svg>
+            </div>
           </div>
           <div class="modal-field">
             <label for="user-comment" class="input-label">Коментар</label>
-            <textarea name="user-comment" id="user-comment" placeholder="Введіть текст"></textarea>
+            <textarea name="user-comment" id="user-comment" class="modal-comment" placeholder="Введіть текст"></textarea>
           </div>
-          <!-- <input type="checkbox">
-          <label>Погоджуюся з розсилкою та приймаю <a href="#" class="contract-link link">Умови договору</a></label> -->
+          <div class="modal-check">
+            <input type="checkbox" name="policy" class=" /hidden" id="check">
+            <svg class="check-icon" width="16" height="15">
+              <use href="./images/icons.svg#icon-check"></use>
+            </svg>
+            <label for="check" class="check-label">Погоджуюся з розсилкою та приймаю <a href="#" class="contract-link link">Умови договору</a></label>
+          </div>
           <button type="submit" class="modal-btn-send">Відправити</button>
         </form>
       </div>
