@@ -689,7 +689,9 @@ address {
     margin-bottom: 10px;
     width: 100%;
 }
-
+.modal-field:nth-of-type(4n) {
+    margin-bottom: 20px;
+}
 .input-label {
     font-size: 12px;
     line-height: 1.17;
@@ -752,7 +754,6 @@ address {
 
 /* CHECKBOX */
 .modal-field-check {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
 }
